@@ -11,6 +11,7 @@
 #import "DRAnimationBlockDelegate.h"
 #import "UIView+AnimationBlocks.h"
 #import "MyLabel.h"
+#import "TestSizeFit.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet MyView *myView;
@@ -26,7 +27,7 @@
   
     [self labelSizeToFit];
     
-    
+    [self customerViewSizeToFit];
     
 
 }
@@ -47,14 +48,30 @@
 - (void) labelSizeToFit {
     
     
-    UILabel *label1          = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 100.0f, 0.0f, 0.0f)];
+    MyLabel *label1          = [[MyLabel alloc] initWithFrame:CGRectMake(0.0f, 200.0f, 100.0f, 0.0f)];
     label1.backgroundColor   = [UIColor yellowColor];
     label1.text              = @"当一个 view 例如 label 设置完 text 属性后 调用[label sizeToFit]; 会根据 label 内容计算出合适的 size 来完全显示 label 内容";
     label1.numberOfLines     = 0;
-    [label1 sizeToFit];
+//    [label1 sizeToFit];
+    
+    // 或者给一个限定的宽度和高度 让 label 在这个范围内进行自适应 size
+    CGSize labelSize = [label1 sizeThatFits:CGSizeMake([[UIScreen mainScreen] bounds].size.width, MAXFLOAT)];
+    CGRect rect      = CGRectMake(label1.frame.origin.x, label1.frame.origin.y, labelSize.width, labelSize.height);
+    [label1 setFrame:rect];
     
     [self.view addSubview:label1];
     
+    
+}
+
+- (void) customerViewSizeToFit {
+    
+    TestSizeFit *customerView = [[TestSizeFit alloc] init];
+    [customerView setLabel1Text:@"大兵布莱恩特" setLabel2Text:@"巴爷科技 (上海) 有限公司"];
+    
+    [customerView sizeToFit];
+    
+    [self.view addSubview:customerView];
     
 }
 

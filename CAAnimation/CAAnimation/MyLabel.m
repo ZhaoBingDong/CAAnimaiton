@@ -10,4 +10,15 @@
 
 @implementation MyLabel
 
+
+- (CGSize)sizeThatFits:(CGSize)size {
+    
+    CGSize newSize = [super sizeThatFits:size];
+    NSLog(@"size =%@",NSStringFromCGSize(newSize));
+    
+    return newSize;
+    
+}
+
+
 @end

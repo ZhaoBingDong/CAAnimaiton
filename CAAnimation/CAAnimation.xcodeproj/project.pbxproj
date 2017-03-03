@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D52BAE41E6947D3007D1B07 /* MyLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52BAE31E6947D3007D1B07 /* MyLabel.m */; };
+		2D52BAE71E697312007D1B07 /* TestSizeFit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D52BAE61E697312007D1B07 /* TestSizeFit.m */; };
 		2DFE04B91E680D74006C2E70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE04B81E680D74006C2E70 /* main.m */; };
 		2DFE04BC1E680D74006C2E70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE04BB1E680D74006C2E70 /* AppDelegate.m */; };
 		2DFE04BF1E680D74006C2E70 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE04BE1E680D74006C2E70 /* ViewController.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		2D52BAE21E6947D3007D1B07 /* MyLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabel.h; sourceTree = "<group>"; };
 		2D52BAE31E6947D3007D1B07 /* MyLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabel.m; sourceTree = "<group>"; };
+		2D52BAE51E697312007D1B07 /* TestSizeFit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSizeFit.h; sourceTree = "<group>"; };
+		2D52BAE61E697312007D1B07 /* TestSizeFit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSizeFit.m; sourceTree = "<group>"; };
 		2DFE04B41E680D74006C2E70 /* CAAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFE04B81E680D74006C2E70 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2DFE04BA1E680D74006C2E70 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -135,6 +138,8 @@
 				2DFE04F71E682579006C2E70 /* DRSavedPopAnimationState.m */,
 				2D52BAE21E6947D3007D1B07 /* MyLabel.h */,
 				2D52BAE31E6947D3007D1B07 /* MyLabel.m */,
+				2D52BAE51E697312007D1B07 /* TestSizeFit.h */,
+				2D52BAE61E697312007D1B07 /* TestSizeFit.m */,
 				2DFE04C01E680D74006C2E70 /* Main.storyboard */,
 				2DFE04C31E680D74006C2E70 /* Assets.xcassets */,
 				2DFE04C51E680D74006C2E70 /* LaunchScreen.storyboard */,
@@ -312,6 +317,7 @@
 				2DFE04BF1E680D74006C2E70 /* ViewController.m in Sources */,
 				2DFE04F51E68177F006C2E70 /* DRAnimationBlockDelegate.m in Sources */,
 				2DFE04F21E68129F006C2E70 /* UIView+AnimationBlocks.m in Sources */,
+				2D52BAE71E697312007D1B07 /* TestSizeFit.m in Sources */,
 				2DFE04BC1E680D74006C2E70 /* AppDelegate.m in Sources */,
 				2DFE04F81E682579006C2E70 /* DRSavedPopAnimationState.m in Sources */,
 				2DFE04B91E680D74006C2E70 /* main.m in Sources */,
